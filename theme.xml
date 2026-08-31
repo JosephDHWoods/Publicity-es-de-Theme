@@ -1,0 +1,109 @@
+<!--
+Special Thanks to Evan-Amos on Wikimedia for supplying most of the console photos.
+Those not sourced from Evan-Amos were taken from official promotional media.
+Special thanks to Kapotaksha Das PHD. and Comet the Crocodile for debugging assistance
+Photos sourced via Computerspielemuseum
+-->
+
+<theme>
+
+  <include>./_inc/metadata/_default.xml</include>
+  <include>./_inc/metadata/${system.theme}.xml</include>
+  <variables>
+    <pc>./_inc/grafx/pc/</pc>
+    <tv>./_inc/grafx/tv/</tv>
+    <oneplus>./_inc/grafx/oneplus/</oneplus>
+    <steamdeck>./_inc/grafx/steamdeck/</steamdeck>
+  </variables>
+
+  <!-- System -->
+
+  <view name="system">
+    <image name="background">
+      <stationary>always</stationary>
+      <path>${tv}bg.png</path>
+      <tile>false</tile>
+      <pos>0 0</pos>
+      <origin>0 0</origin>
+      <size>1 1</size>
+      <zIndex>0</zIndex>
+    </image>
+
+    <image name="background1">
+      <stationary>always</stationary>
+      <path>${tv}bg1.png</path>
+      <tile>false</tile>
+      <pos>0 0</pos>
+      <origin>0 0</origin>
+      <size>1 1</size>
+      <zIndex>5</zIndex>
+    </image>
+
+    <image name="background2">
+      <stationary>always</stationary>
+      <renderDuringTransitions>false</renderDuringTransitions>
+      <path>${tv}bg2.png</path>
+      <tile>false</tile>
+      <pos>0 0</pos>
+      <origin>0 0</origin>
+      <size>1 1</size>
+      <zIndex>10</zIndex>
+    </image>
+
+    <carousel name="systemcarousel">
+      <type>horizontal</type>
+      <fastScrolling>true</fastScrolling>
+      <color>004c4c55</color>
+      <textColor>00000000</textColor>
+      <zIndex>3</zIndex>
+    </carousel>
+
+    <image name="sysphoto">
+      <path>./_inc/sysicons/${system.theme}.png</path>
+      <default>./_inc/sysicons/default.png</default>
+      <pos>.275 .35</pos>
+      <origin>.5 .5</origin>
+      <maxSize>.25 .3</maxSize>
+      <zIndex>6</zIndex>
+    </image>
+
+    <image name="syslogo">
+      <pos>.275 .835</pos>
+      <origin>0.5 0.5</origin>
+      <maxSize>.4 .2</maxSize>
+      <path>./_inc/logo/${system.theme}.svg</path>
+      <zIndex>7</zIndex>
+    </image>
+
+    <image name="pub">
+      <stationary>always</stationary>
+      <pos>.75 .5</pos>
+      <origin>0.5 0.5</origin>
+      <maxSize>.4 .9</maxSize>
+      <path>./_inc/pubs/${system.theme}.png</path>
+      <visible>true</visible>
+      <zIndex>15</zIndex>
+    </image>
+
+  </view>
+
+  <!-- Gamelist -->
+
+  <!-- Aspect Ratios -->
+  <aspectRatio name="21:9">
+    <include>./21-9.xml</include>
+  </aspectRatio>
+
+  <aspectRatio name="16:10">
+    <include>./16-10.xml</include>
+  </aspectRatio>
+
+  <aspectRatio name="16:9">
+    <include>./16-9.xml</include>
+  </aspectRatio>
+
+  <aspectRatio name="1:1">
+    <include>./1-1.xml</include>
+  </aspectRatio>
+
+</theme>

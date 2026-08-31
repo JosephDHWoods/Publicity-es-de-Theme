@@ -1,0 +1,10 @@
+<theme>
+  <view name="system">  
+
+    <helpsystem name="help">
+      <pos>.75 .98</pos>
+      <origin>.5 .5</origin>
+    </helpsystem>
+
+  </view>
+</theme>
