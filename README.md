@@ -12,4 +12,3 @@ Supports 16:9, 16:10, 21:9, and 1:1 displays, tested and optimized for HDTV, Ste
 <img width="1280" height="720" alt="16_9 GL" src="https://github.com/user-attachments/assets/beb1c6b3-16bf-4cd3-ba6f-2c37a2f20d41" />
 <img width="1680" height="720" alt="21_9 SYS" src="https://github.com/user-attachments/assets/fe7c8185-1280-4170-bf3a-2f1d874a009f" />
 <img width="1680" height="720" alt="21_9 GL" src="https://github.com/user-attachments/assets/19625e80-af42-4155-81d6-7cb2cbdc9726" />
-
