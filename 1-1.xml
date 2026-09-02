@@ -2,31 +2,95 @@
   <view name="system">  
     <image name="background">
       <path>${oneplus}bg.png</path>
-      <tile>false</tile>
-      <pos>0 0</pos>
-      <origin>0 0</origin>
-      <size>1 1</size>
-      <zIndex>0</zIndex>
     </image>
+
+    <image name="background1">
+      <path>${oneplus}bg1.png</path>
+    </image>
+
     <image name="background2">
       <path>${oneplus}bg2.png</path>
-      <tile>false</tile>
-      <pos>0 0</pos>
-      <origin>0 0</origin>
-      <size>1 1</size>
-      <zIndex>6</zIndex>
+    </image>
+
+    <carousel name="systemcarousel">
+    </carousel>
+
+    <image name="sysphoto">
+      <pos>.3 .3</pos>
+      <maxSize>.25 .3</maxSize>
     </image>
 
     <image name="syslogo">
-      <pos>.5 .148</pos>
-      <origin>0.5 0.5</origin>
-      <maxSize>.6 .2</maxSize>
+      <pos>.5 .74</pos>
+      <maxSize>.62 .2</maxSize>
+    </image>
+
+    <image name="pub">
+      <pos>.78 .32</pos>
+      <maxSize>.4 .5</maxSize>
     </image>
 
     <helpsystem name="help">
-      <pos>.5 .98</pos>
-      <origin>.5 .5</origin>
+      <pos>0.02 0.01</pos>
+      <origin>0 0</origin>
     </helpsystem>
 
   </view>
+
+  <view name="gamelist">
+   <image name="background">
+      <path>${oneplus}gl.png</path>
+
+    </image>
+
+    <image name="background2">
+      <path>${oneplus}gl2.png</path>
+    </image>
+
+    <image name="pspbase">
+      <pos>.25 .8</pos>
+      <size>.5 0</size>
+    </image>
+
+    <image name="pspshadow">
+      <pos>.258 .808</pos>
+      <size>.5 0</size>
+    </image>
+
+    <video name="vidpreview">
+      <pos>.25 .79</pos>
+      <maxSize>.27 .17</maxSize>
+    </video>
+
+    <image name="pspscreen">
+      <pos>.25 .8</pos>
+      <size>.5 0</size>
+    </image>
+
+    <image name="coverart">
+      <pos>.83 .38</pos>
+      <maxSize>.28 .34</maxSize>
+    </image>
+
+    <image name="coverartshadow">
+      <pos>.837 .385</pos>
+      <maxSize>.285 .345</maxSize>
+    </image>
+
+    <image name="physmedia">
+      <pos>.2 .53</pos>
+      <maxSize>.24 .25</maxSize>
+    </image>
+
+    <badges name="stickers">
+      <pos>.64 .05</pos>
+      <size>.4 .4</size>
+    </badges>
+
+    <carousel name="gamecarousel">
+      <pos>.2 .16</pos>
+      <size>1 1.2</size>
+    </carousel>
+  </view>
+
 </theme>

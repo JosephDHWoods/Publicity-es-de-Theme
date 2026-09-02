@@ -1,8 +1,10 @@
 <!--
 Special Thanks to Evan-Amos on Wikimedia for supplying most of the console photos.
 Those not sourced from Evan-Amos were taken from official promotional media.
-Special thanks to Kapotaksha Das PHD. and Comet the Crocodile for debugging assistance
-Photos sourced via Computerspielemuseum
+Special thanks to Kapotaksha Das PHD. and Comet the Crocodile for vram debugging assistance
+Special Thanks to @tawxic for advice on layering issues
+Bedroom photo sourced via Computerspielemuseum
+Desk background and wall photo Rendered in blender by @theflamelord
 -->
 
 <theme>
@@ -20,16 +22,18 @@ Photos sourced via Computerspielemuseum
 
   <view name="system">
     <image name="background">
+      <interpolation>linear</interpolation>
       <stationary>always</stationary>
       <path>${tv}bg.png</path>
       <tile>false</tile>
       <pos>0 0</pos>
       <origin>0 0</origin>
       <size>1 1</size>
-      <zIndex>0</zIndex>
+      <zIndex>7</zIndex>
     </image>
 
     <image name="background1">
+      <interpolation>linear</interpolation>
       <stationary>always</stationary>
       <path>${tv}bg1.png</path>
       <tile>false</tile>
@@ -40,6 +44,7 @@ Photos sourced via Computerspielemuseum
     </image>
 
     <image name="background2">
+      <interpolation>linear</interpolation>
       <stationary>always</stationary>
       <renderDuringTransitions>false</renderDuringTransitions>
       <path>${tv}bg2.png</path>
@@ -47,47 +52,204 @@ Photos sourced via Computerspielemuseum
       <pos>0 0</pos>
       <origin>0 0</origin>
       <size>1 1</size>
-      <zIndex>10</zIndex>
+      <zIndex>20</zIndex>
+    </image>
+
+    <image name="colorback">
+      <color>004c4c55</color>
+      <size>1 1</size>
+      <origin>.5 .5</origin>
+      <pos>.5 .5</pos>
+      <zIndex>12</zIndex>
     </image>
 
     <carousel name="systemcarousel">
+      <size>1 1</size>
+      <pos>0 0</pos>
+      <origin>0 0</origin>
       <type>horizontal</type>
       <fastScrolling>true</fastScrolling>
-      <color>004c4c55</color>
+      <color>00000000</color>
       <textColor>00000000</textColor>
-      <zIndex>3</zIndex>
+      <zIndex>15</zIndex>
     </carousel>
 
     <image name="sysphoto">
+      <interpolation>linear</interpolation>
       <path>./_inc/sysicons/${system.theme}.png</path>
       <default>./_inc/sysicons/default.png</default>
-      <pos>.275 .35</pos>
+      <pos>.276 .35</pos>
       <origin>.5 .5</origin>
       <maxSize>.25 .3</maxSize>
-      <zIndex>6</zIndex>
+      <zIndex>15</zIndex>
     </image>
 
     <image name="syslogo">
+      <interpolation>linear</interpolation>
       <pos>.275 .835</pos>
       <origin>0.5 0.5</origin>
       <maxSize>.4 .2</maxSize>
       <path>./_inc/logo/${system.theme}.svg</path>
-      <zIndex>7</zIndex>
+      <zIndex>15</zIndex>
     </image>
 
     <image name="pub">
+      <interpolation>linear</interpolation>
       <stationary>always</stationary>
       <pos>.75 .5</pos>
       <origin>0.5 0.5</origin>
       <maxSize>.4 .9</maxSize>
       <path>./_inc/pubs/${system.theme}.png</path>
       <visible>true</visible>
-      <zIndex>15</zIndex>
+      <zIndex>25</zIndex>
     </image>
 
   </view>
 
   <!-- Gamelist -->
+
+  <view name="gamelist">
+   <image name="background">
+      <interpolation>linear</interpolation>
+      <stationary>always</stationary>
+      <path>${tv}gl.png</path>
+      <tile>false</tile>
+      <pos>0 0</pos>
+      <origin>0 0</origin>
+      <size>1 1</size>
+      <zIndex>0</zIndex>
+    </image>
+
+    <image name="background2">
+      <interpolation>linear</interpolation>
+      <stationary>always</stationary>
+      <path>${tv}gl2.png</path>
+      <tile>false</tile>
+      <pos>0 0</pos>
+      <origin>0 0</origin>
+      <size>1 1</size>
+      <zIndex>20</zIndex>
+    </image>
+
+    <image name="pspbase">
+      <interpolation>linear</interpolation>
+      <stationary>always</stationary>
+      <path>./_inc/grafx/psp.png</path>
+      <tile>false</tile>
+      <pos>.4 .8</pos>
+      <origin>.5 .5</origin>
+      <size>.3 0</size>
+      <rotation>-5</rotation>
+      <zIndex>10</zIndex>
+    </image>
+
+    <image name="pspshadow">
+      <interpolation>linear</interpolation>
+      <stationary>always</stationary>
+      <path>./_inc/grafx/psp.png</path>
+      <tile>false</tile>
+      <pos>.408 .808</pos>
+      <origin>.5 .5</origin>
+      <size>.3 0</size>
+      <brightness>-2</brightness>
+      <color>000000FF</color>
+      <rotation>-5</rotation>
+      <opacity>75</opacity>
+      <zIndex>9</zIndex>
+    </image>
+
+    <video name="vidpreview">
+      <imageType>screenshot, titlescreen</imageType>
+      <defaultImage>./_inc/grafx/psphome.png</defaultImage>
+      <interpolation>linear</interpolation>
+      <stationary>always</stationary>
+      <pos>.4 .785</pos>
+      <origin>.5 .5</origin>
+      <maxSize>.165 .158</maxSize>
+      <rotation>-5</rotation>
+      <delay>1.5</delay>
+      <fadeInTime>0</fadeInTime>
+      <zIndex>11</zIndex>
+    </video>
+
+    <image name="pspscreen">
+      <interpolation>linear</interpolation>
+      <stationary>always</stationary>
+      <path>./_inc/grafx/pspscreen.png</path>
+      <tile>false</tile>
+      <pos>.4 .8</pos>
+      <origin>.5 .5</origin>
+      <size>.3 0</size>
+      <rotation>-5</rotation>
+      <opacity>.15</opacity>
+      <zIndex>12</zIndex>
+    </image>
+
+    <image name="coverart">
+      <interpolation>linear</interpolation>
+      <stationary>always</stationary>
+      <imageType>cover</imageType>
+      <default>./_inc/power.png</default>
+      <pos>.305 .5</pos>
+      <origin>.5 .5</origin>
+      <maxSize>.2 .35</maxSize>
+      <rotation>-4</rotation>
+      <zIndex>15</zIndex>
+    </image>
+
+    <image name="coverartshadow">
+      <interpolation>linear</interpolation>
+      <stationary>always</stationary>
+      <imageType>cover</imageType>
+      <default>./_inc/power.png</default>
+      <pos>.31 .51</pos>
+      <origin>.5 .5</origin>
+      <maxSize>.205 .355</maxSize>
+      <rotation>-4</rotation>
+      <brightness>-2</brightness>
+      <color>000000FF</color>
+      <opacity>75</opacity>
+      <zIndex>14</zIndex>
+    </image>
+
+    <image name="physmedia">
+      <interpolation>linear</interpolation>
+      <stationary>always</stationary>
+      <imageType>physicalmedia</imageType>
+      <default>./_inc/sd.png</default>
+      <pos>.15 .79</pos>
+      <origin>.5 .5</origin>
+      <maxSize>.18 .25</maxSize>
+      <rotation>5</rotation>
+      <zIndex>15</zIndex>
+    </image>
+
+    <badges name="stickers">
+      <interpolation>linear</interpolation>
+      <pos>.47 .05</pos>
+      <size>.5 .4</size>
+      <rotation>3</rotation>
+      <slots>manual, completed, favorite</slots>
+      <customBadgeIcon badge="favorite">./_inc/badges/fave.png</customBadgeIcon>
+      <customBadgeIcon badge="completed">./_inc/badges/complete.png</customBadgeIcon>
+      <customBadgeIcon badge="manual">./_inc/badges/manual.png</customBadgeIcon>
+      <zIndex>40</zIndex>
+    </badges>
+
+    <carousel name="gamecarousel">
+      <size>1 1</size>
+      <pos>.1 0</pos>
+      <origin>0 0</origin>
+      <itemScale>1.5</itemScale>
+      <type>verticalWheel</type>
+      <itemRotationOrigin>3 -5</itemRotationOrigin>
+      <itemRotation>11</itemRotation>
+      <unfocusedItemDimming>.5</unfocusedItemDimming>
+      <fastScrolling>true</fastScrolling>
+      <color>00000000</color>
+      <zIndex>3</zIndex>
+    </carousel>
+  </view>
 
   <!-- Aspect Ratios -->
   <aspectRatio name="21:9">

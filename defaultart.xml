@@ -1,0 +1,116 @@
+
+<theme>
+
+  <!-- System -->
+  <view name="system">
+
+    <image name="background">
+      <path>${tv}bg.png</path>
+      <tile>false</tile>
+      <pos>0 0</pos>
+      <origin>0 0</origin>
+      <size>1 1</size>
+      <zIndex>0</zIndex>
+    </image>
+
+    <carousel name="systemcarousel">
+      <type>horizontalWheel</type>
+      <pos>-.027 -.15</pos>
+      <origin>0.0 0.0</origin>
+      <size>0.6 1.0</size>
+      <itemScale>1.2</itemScale>
+      <itemsBeforeCenter>0</itemsBeforeCenter>
+      <itemsAfterCenter>0</itemsAfterCenter>
+      <fastScrolling>true</fastScrolling>
+      <color>00000000</color>
+      <textColor>00000000</textColor>
+      <zIndex>10</zIndex>
+    </carousel>
+
+    <image name="mini">
+      <path>./_inc/minis/${system.theme}.png</path>
+      <default>./_inc/minis/BLANK.png</default>
+      <pos>.151 .12</pos>
+      <origin>.0 .0</origin>
+      <size>.25 0</size>
+      <zIndex>15</zIndex>
+    </image>
+
+    <image name="background2">
+      <path>${tv}bg2.png</path>
+      <tile>false</tile>
+      <pos>0 0</pos>
+      <origin>0 0</origin>
+      <size>1 1</size>
+      <zIndex>20</zIndex>
+    </image>
+
+    <image name="sysbackuppaper">
+      <pos>.15 .83</pos>
+      <origin>0.5 0.5</origin>
+      <maxSize>.3 .3</maxSize>
+      <rotation>.1</rotation>
+      <path>./_inc/grafx/paper.png</path>
+      <zIndex>22></zIndex>
+    </image>
+
+    <image name="sysbackuppaper2">
+      <pos>.25 .83</pos>
+      <origin>0.5 0.5</origin>
+      <maxSize>.3 .3</maxSize>
+      <rotation>.1</rotation>
+      <path>./_inc/grafx/paper.png</path>
+      <zIndex>22></zIndex>
+    </image>
+
+    <image name="sysbackuppaper3">
+      <pos>.4 .83</pos>
+      <origin>0.5 0.5</origin>
+      <maxSize>.3 .3</maxSize>
+      <rotation>.1</rotation>
+      <path>./_inc/grafx/paper.png</path>
+      <zIndex>22></zIndex>
+    </image>
+
+    <text name="sysman">
+      <pos>.27 .82</pos>
+      <origin>0.5 0.5</origin>
+      <fontSize>.08</fontSize>
+      <horizontalAlignment>center</horizontalAlignment>
+      <fontPath>./_inc/fonts/GABRWFFR.TTF</fontPath>
+      <text>${systemManufacturer}</text>
+      <zIndex>30></zIndex>
+    </text>
+
+    
+
+    <image name="controller">
+      <pos>.75 .5</pos>
+      <origin>0.5 0.5</origin>
+      <maxSize>.4 .4</maxSize>
+      <path>./_inc/controllers/${system.theme}.svg</path>
+      <zIndex>30></zIndex>
+    </image>
+
+  </view>
+
+  <!-- Gamelist -->
+
+  <!-- Aspect Ratios -->
+  <aspectRatio name="21:9">
+    <include>./21-9.xml</include>
+  </aspectRatio>
+
+  <aspectRatio name="16:10">
+    <include>./16-10.xml</include>
+  </aspectRatio>
+
+  <aspectRatio name="16:9">
+    <include>./16-9.xml</include>
+  </aspectRatio>
+
+  <aspectRatio name="1:1">
+    <include>./1-1.xml</include>
+  </aspectRatio>
+
+</theme>

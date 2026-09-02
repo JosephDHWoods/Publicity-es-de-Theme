@@ -2,31 +2,113 @@
   <view name="system">  
     <image name="background">
       <path>${pc}bg.png</path>
-      <tile>false</tile>
-      <pos>0 0</pos>
-      <origin>0 0</origin>
-      <size>1 1</size>
-      <zIndex>0</zIndex>
     </image>
+
+    <image name="background1">
+      <path>${pc}bg1.png</path>
+    </image>
+
     <image name="background2">
       <path>${pc}bg2.png</path>
-      <tile>false</tile>
-      <pos>0 0</pos>
-      <origin>0 0</origin>
-      <size>1 1</size>
-      <zIndex>6</zIndex>
+    </image>
+
+    <carousel name="systemcarousel">
+    </carousel>
+
+    <image name="sysphoto">
+      <pos>.33 .5</pos>
+      <maxSize>.22 .5</maxSize>
     </image>
 
     <image name="syslogo">
-      <pos>.8215 .825</pos>
-      <origin>0.5 0.5</origin>
-      <maxSize>.3 .2</maxSize>
+      <pos>.822 .822</pos>
+      <maxSize>.29 .21</maxSize>
+      <zIndex>6</zIndex>
+    </image>
+
+    <image name="pub">
+      <pos>.86 .35</pos>
+      <origin>.7 .5</origin>
+      <maxSize>.5 .6</maxSize>
     </image>
 
     <helpsystem name="help">
-      <pos>.33 .98</pos>
-      <origin>.5 .5</origin>
+      <pos>0.18 0.02</pos>
+      <origin>0 0</origin>
     </helpsystem>
 
   </view>
+
+  <view name="gamelist">
+   <image name="background">
+      <path>${pc}gl.png</path>
+
+    </image>
+
+    <image name="background2">
+      <path>${pc}gl2.png</path>
+    </image>
+
+    <image name="pspbase">
+      <pos>.4 .33</pos>
+      <size>.2 0</size>
+      <rotation>5</rotation>
+    </image>
+
+    <image name="pspshadow">
+      <pos>.403 .34</pos>
+      <size>.2 0</size>
+      <rotation>5</rotation>
+    </image>
+
+    <video name="vidpreview">
+      <pos>.402 .321</pos>
+      <maxSize>.11 .142</maxSize>
+      <rotation>5</rotation>
+    </video>
+
+    <image name="pspscreen">
+      <pos>.4 .33</pos>
+      <size>.2 0</size>
+      <rotation>5</rotation>
+    </image>
+
+    <image name="coverart">
+      <pos>.45 .7</pos>
+      <origin>.8 .5</origin>
+      <maxSize>.17 .48</maxSize>
+      <rotation>5</rotation>
+    </image>
+
+    <image name="coverartshadow">
+      <pos>.454 .707</pos>
+      <maxSize>.17 .48</maxSize>
+      <origin>.8 .5</origin>
+      <rotation>5</rotation>
+    </image>
+
+    <image name="physmedia">
+      <pos>.22 .7</pos>
+      <maxSize>.16 .3</maxSize>
+      <rotation>-3</rotation>
+    </image>
+
+    <badges name="stickers">
+      <pos>.47 .07</pos>
+      <size>.5 .4</size>
+    </badges>
+
+    <carousel name="gamecarousel">
+      <pos>.17 .21</pos>
+      <itemScale>1.4</itemScale>
+      <itemRotation>8</itemRotation>
+    </carousel>
+
+    <helpsystem name="help">
+      <pos>0.02 0</pos>
+      <origin>0 0</origin>
+    </helpsystem>
+
+  </view>
+
 </theme>
