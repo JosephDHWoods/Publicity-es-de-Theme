@@ -6,16 +6,6 @@
   <aspectRatio>16:10</aspectRatio>
   <aspectRatio>16:9</aspectRatio>
   <aspectRatio>1:1</aspectRatio>
-  <transitions name="Slide">
-    <label>instant and slide</label>
-    <selectable>true</selectable>
-    <systemToSystem>slide</systemToSystem>
-    <systemToGamelist>instant</systemToGamelist>
-    <gamelistToGamelist>instant</gamelistToGamelist>
-    <gamelistToSystem>instant</gamelistToSystem>
-    <startupToSystem>instant</startupToSystem>
-    <startupToGamelist>instant</startupToGamelist>
-  </transitions>
   <transitions name="instant">
       <label>instant</label>
       <selectable>true</selectable>
@@ -23,5 +13,15 @@
       <systemToGamelist>instant</systemToGamelist>
       <gamelistToGamelist>instant</gamelistToGamelist>
       <gamelistToSystem>instant</gamelistToSystem>
+  </transitions>
+  <transitions name="Slide">
+    <label>instant and slide</label>
+    <selectable>true</selectable>
+    <systemToSystem>slide</systemToSystem>
+    <systemToGamelist>instant</systemToGamelist>
+    <gamelistToGamelist>slide</gamelistToGamelist>
+    <gamelistToSystem>instant</gamelistToSystem>
+    <startupToSystem>instant</startupToSystem>
+    <startupToGamelist>instant</startupToGamelist>
   </transitions>
   </themeCapabilities>
